@@ -9,7 +9,7 @@
 /* Begin PBXBuildFile section */
 		6DBE5412284761F1002136CC /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6DBE5411284761F1002136CC /* AppDelegate.swift */; };
 		6DBE5414284761F1002136CC /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6DBE5413284761F1002136CC /* SceneDelegate.swift */; };
-		6DBE5416284761F1002136CC /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6DBE5415284761F1002136CC /* ViewController.swift */; };
+		6DBE5416284761F1002136CC /* MainScreenViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6DBE5415284761F1002136CC /* MainScreenViewController.swift */; };
 		6DBE5419284761F1002136CC /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 6DBE5417284761F1002136CC /* Main.storyboard */; };
 		6DBE541C284761F1002136CC /* HW25.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 6DBE541A284761F1002136CC /* HW25.xcdatamodeld */; };
 		6DBE541E284761F2002136CC /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 6DBE541D284761F2002136CC /* Assets.xcassets */; };
@@ -20,7 +20,7 @@
 		6DBE540E284761F1002136CC /* HW25.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = HW25.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		6DBE5411284761F1002136CC /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		6DBE5413284761F1002136CC /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		6DBE5415284761F1002136CC /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		6DBE5415284761F1002136CC /* MainScreenViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainScreenViewController.swift; sourceTree = "<group>"; };
 		6DBE5418284761F1002136CC /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		6DBE541B284761F1002136CC /* HW25.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = HW25.xcdatamodel; sourceTree = "<group>"; };
 		6DBE541D284761F2002136CC /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -58,16 +58,112 @@
 		6DBE5410284761F1002136CC /* HW25 */ = {
 			isa = PBXGroup;
 			children = (
-				6DBE5411284761F1002136CC /* AppDelegate.swift */,
-				6DBE5413284761F1002136CC /* SceneDelegate.swift */,
-				6DBE5415284761F1002136CC /* ViewController.swift */,
+				6DBE5429284762B9002136CC /* Sources */,
+				6DBE543028476851002136CC /* CodeData */,
+				6DBE54282847629F002136CC /* Resources */,
+			);
+			path = HW25;
+			sourceTree = "<group>";
+		};
+		6DBE54282847629F002136CC /* Resources */ = {
+			isa = PBXGroup;
+			children = (
 				6DBE5417284761F1002136CC /* Main.storyboard */,
 				6DBE541D284761F2002136CC /* Assets.xcassets */,
 				6DBE541F284761F2002136CC /* LaunchScreen.storyboard */,
 				6DBE5422284761F2002136CC /* Info.plist */,
 				6DBE541A284761F1002136CC /* HW25.xcdatamodeld */,
 			);
-			path = HW25;
+			path = Resources;
+			sourceTree = "<group>";
+		};
+		6DBE5429284762B9002136CC /* Sources */ = {
+			isa = PBXGroup;
+			children = (
+				6DBE542A284762D5002136CC /* App */,
+				6DBE542B28476604002136CC /* MainScreen */,
+				6DBE543128476AED002136CC /* DetailedScreen */,
+			);
+			path = Sources;
+			sourceTree = "<group>";
+		};
+		6DBE542A284762D5002136CC /* App */ = {
+			isa = PBXGroup;
+			children = (
+				6DBE5411284761F1002136CC /* AppDelegate.swift */,
+				6DBE5413284761F1002136CC /* SceneDelegate.swift */,
+			);
+			path = App;
+			sourceTree = "<group>";
+		};
+		6DBE542B28476604002136CC /* MainScreen */ = {
+			isa = PBXGroup;
+			children = (
+				6DBE542C28476617002136CC /* Models */,
+				6DBE542D28476631002136CC /* Views */,
+				6DBE542F28476671002136CC /* Controllers */,
+			);
+			path = MainScreen;
+			sourceTree = "<group>";
+		};
+		6DBE542C28476617002136CC /* Models */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		6DBE542D28476631002136CC /* Views */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		6DBE542F28476671002136CC /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				6DBE5415284761F1002136CC /* MainScreenViewController.swift */,
+			);
+			path = Controllers;
+			sourceTree = "<group>";
+		};
+		6DBE543028476851002136CC /* CodeData */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = CodeData;
+			sourceTree = "<group>";
+		};
+		6DBE543128476AED002136CC /* DetailedScreen */ = {
+			isa = PBXGroup;
+			children = (
+				6DBE543428476B3A002136CC /* Models */,
+				6DBE543328476B30002136CC /* Views */,
+				6DBE543228476B27002136CC /* Controllers */,
+			);
+			path = DetailedScreen;
+			sourceTree = "<group>";
+		};
+		6DBE543228476B27002136CC /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Controllers;
+			sourceTree = "<group>";
+		};
+		6DBE543328476B30002136CC /* Views */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		6DBE543428476B3A002136CC /* Models */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Models;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -141,7 +237,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				6DBE5416284761F1002136CC /* ViewController.swift in Sources */,
+				6DBE5416284761F1002136CC /* MainScreenViewController.swift in Sources */,
 				6DBE5412284761F1002136CC /* AppDelegate.swift in Sources */,
 				6DBE5414284761F1002136CC /* SceneDelegate.swift in Sources */,
 				6DBE541C284761F1002136CC /* HW25.xcdatamodeld in Sources */,
@@ -293,10 +389,11 @@
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = ZB4T6SD8SN;
 				GENERATE_INFOPLIST_FILE = YES;
-				INFOPLIST_FILE = HW25/Info.plist;
+				INFOPLIST_FILE = HW25/Resources/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -308,7 +405,7 @@
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Debug;
 		};
@@ -321,10 +418,11 @@
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = ZB4T6SD8SN;
 				GENERATE_INFOPLIST_FILE = YES;
-				INFOPLIST_FILE = HW25/Info.plist;
+				INFOPLIST_FILE = HW25/Resources/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -336,7 +434,7 @@
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Release;
 		};
