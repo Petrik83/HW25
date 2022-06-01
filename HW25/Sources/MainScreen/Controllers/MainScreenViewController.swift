@@ -29,7 +29,7 @@ class MainScreenViewController: UIViewController {
             button.addTarget(self, action: #selector(buttonClicked), for: .touchUpInside)
         }
         mainScreenView?.tableView.dataSource = self
-//        mainScreenView?.tableView.delegate = self
+        mainScreenView?.tableView.delegate = self
     }
     
     @objc func buttonClicked() {
