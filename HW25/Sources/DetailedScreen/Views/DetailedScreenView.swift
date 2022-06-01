@@ -8,7 +8,7 @@
 import Foundation
 import UIKit
 
-class DetailedView: UIView {
+class DetailedScreenView: UIView {
         
     lazy var imageView: UIView = {
         let view = UIView()
