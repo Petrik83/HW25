@@ -9,6 +9,13 @@ import UIKit
 
 extension MainScreenViewController: UITableViewDelegate {
     
+    func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+        let detailedScreenViewController = DetailedScreenViewController()
+        detailedScreenViewController.profileIndex = indexPath.row
+            navigationController?.pushViewController(detailedScreenViewController, animated: true)
+            tableView.deselectRow(at: indexPath, animated: true)
+    }
+    
     func tableView(_ tableView: UITableView, trailingSwipeActionsConfigurationForRowAt indexPath: IndexPath) -> UISwipeActionsConfiguration? {
         let deleteAction = UIContextualAction(style: .destructive, title: "Delete") { contextualAction, view, boolValue in
             StorageManager().deleteProfile(profileIndex: indexPath.row)

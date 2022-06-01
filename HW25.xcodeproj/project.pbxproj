@@ -20,6 +20,9 @@
 		6DCA7DA128476FA30024C9AE /* MainScreenViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6DCA7DA028476FA30024C9AE /* MainScreenViewModel.swift */; };
 		6DCA7DA328477AD70024C9AE /* MainScreenViewControllerDataSource.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6DCA7DA228477AD70024C9AE /* MainScreenViewControllerDataSource.swift */; };
 		6DCA7DA5284782450024C9AE /* MainScreenViewControllerDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6DCA7DA4284782450024C9AE /* MainScreenViewControllerDelegate.swift */; };
+		6DCA7DA7284785530024C9AE /* DetailedScreenView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6DCA7DA6284785530024C9AE /* DetailedScreenView.swift */; };
+		6DCA7DA9284786CF0024C9AE /* DetailedScreenViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6DCA7DA8284786CF0024C9AE /* DetailedScreenViewController.swift */; };
+		6DCA7DAD284789430024C9AE /* DetailedScreenModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6DCA7DAC284789430024C9AE /* DetailedScreenModel.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -38,6 +41,9 @@
 		6DCA7DA028476FA30024C9AE /* MainScreenViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainScreenViewModel.swift; sourceTree = "<group>"; };
 		6DCA7DA228477AD70024C9AE /* MainScreenViewControllerDataSource.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainScreenViewControllerDataSource.swift; sourceTree = "<group>"; };
 		6DCA7DA4284782450024C9AE /* MainScreenViewControllerDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainScreenViewControllerDelegate.swift; sourceTree = "<group>"; };
+		6DCA7DA6284785530024C9AE /* DetailedScreenView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailedScreenView.swift; sourceTree = "<group>"; };
+		6DCA7DA8284786CF0024C9AE /* DetailedScreenViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailedScreenViewController.swift; sourceTree = "<group>"; };
+		6DCA7DAC284789430024C9AE /* DetailedScreenModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailedScreenModel.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -166,6 +172,7 @@
 		6DBE543228476B27002136CC /* Controllers */ = {
 			isa = PBXGroup;
 			children = (
+				6DCA7DA8284786CF0024C9AE /* DetailedScreenViewController.swift */,
 			);
 			path = Controllers;
 			sourceTree = "<group>";
@@ -173,6 +180,7 @@
 		6DBE543328476B30002136CC /* Views */ = {
 			isa = PBXGroup;
 			children = (
+				6DCA7DA6284785530024C9AE /* DetailedScreenView.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -180,6 +188,7 @@
 		6DBE543428476B3A002136CC /* Models */ = {
 			isa = PBXGroup;
 			children = (
+				6DCA7DAC284789430024C9AE /* DetailedScreenModel.swift */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -265,7 +274,10 @@
 			files = (
 				6DBE5416284761F1002136CC /* MainScreenViewController.swift in Sources */,
 				6DCA7D9C28476E100024C9AE /* MainScreenView.swift in Sources */,
+				6DCA7DA7284785530024C9AE /* DetailedScreenView.swift in Sources */,
 				6DBE5412284761F1002136CC /* AppDelegate.swift in Sources */,
+				6DCA7DAD284789430024C9AE /* DetailedScreenModel.swift in Sources */,
+				6DCA7DA9284786CF0024C9AE /* DetailedScreenViewController.swift in Sources */,
 				6DCA7DA328477AD70024C9AE /* MainScreenViewControllerDataSource.swift in Sources */,
 				6DCA7DA5284782450024C9AE /* MainScreenViewControllerDelegate.swift in Sources */,
 				6DBE543628476C43002136CC /* StorageManager.swift in Sources */,
