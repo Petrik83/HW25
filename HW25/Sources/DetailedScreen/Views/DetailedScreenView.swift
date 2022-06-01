@@ -17,7 +17,7 @@ class DetailedScreenView: UIView {
         let imageView = UIImageView(image: UIImage(systemName: "face.smiling"))
         imageView.contentMode = .scaleAspectFit
         view.addSubview(imageView)
-        imageView.layer.cornerRadius = 75
+        imageView.layer.cornerRadius = DetailedScreenViewMetrics.imageViewCornerRadius
         return imageView
     }()
     
@@ -86,24 +86,45 @@ class DetailedScreenView: UIView {
     private func setupLayout() {
         imageView.translatesAutoresizingMaskIntoConstraints = false
         imageView.centerXAnchor.constraint(equalTo: safeAreaLayoutGuide.centerXAnchor).isActive = true
-        imageView.heightAnchor.constraint(equalToConstant: 150).isActive = true
-        imageView.widthAnchor.constraint(equalToConstant: 150).isActive = true
-        imageView.topAnchor.constraint(equalTo: safeAreaLayoutGuide.topAnchor, constant: 30).isActive = true
+        imageView.heightAnchor.constraint(equalToConstant: DetailedScreenViewMetrics.imageViewHeightAnchor).isActive = true
+        imageView.widthAnchor.constraint(equalToConstant: DetailedScreenViewMetrics.imageViewWidthAnchor).isActive = true
+        imageView.topAnchor.constraint(equalTo: safeAreaLayoutGuide.topAnchor, constant: DetailedScreenViewMetrics.imageViewTopAnchorConstant).isActive = true
         
-        nameTextField.topAnchor.constraint(equalTo: imageView.bottomAnchor, constant: 30).isActive = true
-        nameTextField.leadingAnchor.constraint(equalTo: safeAreaLayoutGuide.leadingAnchor,  constant: 10).isActive = true
-        nameTextField.trailingAnchor.constraint(equalTo: safeAreaLayoutGuide.trailingAnchor,  constant: -10).isActive = true
-        nameTextField.heightAnchor.constraint(equalToConstant: 34).isActive = true
+        nameTextField.topAnchor.constraint(equalTo: imageView.bottomAnchor, constant: DetailedScreenViewMetrics.nameTextFieldTopAnchorConstant).isActive = true
+        nameTextField.leadingAnchor.constraint(equalTo: safeAreaLayoutGuide.leadingAnchor,  constant: DetailedScreenViewMetrics.nameTextFieldLeadingAnchorConstant).isActive = true
+        nameTextField.trailingAnchor.constraint(equalTo: safeAreaLayoutGuide.trailingAnchor,  constant: DetailedScreenViewMetrics.nameTextFieldTrailingAnchorConstant).isActive = true
+        nameTextField.heightAnchor.constraint(equalToConstant: DetailedScreenViewMetrics.nameTextFieldHeightAnchor).isActive = true
         
-        birthdayTextField.topAnchor.constraint(equalTo: nameTextField.bottomAnchor, constant: 20).isActive = true
-        birthdayTextField.leadingAnchor.constraint(equalTo: safeAreaLayoutGuide.leadingAnchor,  constant: 10).isActive = true
-        birthdayTextField.trailingAnchor.constraint(equalTo: safeAreaLayoutGuide.trailingAnchor,  constant: -10).isActive = true
-        birthdayTextField.heightAnchor.constraint(equalToConstant: 34).isActive = true
+        birthdayTextField.topAnchor.constraint(equalTo: nameTextField.bottomAnchor, constant: DetailedScreenViewMetrics.birthdayTextFieldTopAnchorConstant).isActive = true
+        birthdayTextField.leadingAnchor.constraint(equalTo: safeAreaLayoutGuide.leadingAnchor,  constant: DetailedScreenViewMetrics.birthdayTextFieldTopAnchorConstant).isActive = true
+        birthdayTextField.trailingAnchor.constraint(equalTo: safeAreaLayoutGuide.trailingAnchor,  constant: DetailedScreenViewMetrics.birthdayTextFieldTrailingAnchorConstant).isActive = true
+        birthdayTextField.heightAnchor.constraint(equalToConstant: DetailedScreenViewMetrics.birthdayTextFieldHeightAnchor).isActive = true
         
-        genderTextField.topAnchor.constraint(equalTo: birthdayTextField.bottomAnchor, constant: 20).isActive = true
-        genderTextField.leadingAnchor.constraint(equalTo: safeAreaLayoutGuide.leadingAnchor,  constant: 10).isActive = true
-        genderTextField.trailingAnchor.constraint(equalTo: safeAreaLayoutGuide.trailingAnchor,  constant: -10).isActive = true
-        genderTextField.heightAnchor.constraint(equalToConstant: 34).isActive = true
+        genderTextField.topAnchor.constraint(equalTo: birthdayTextField.bottomAnchor, constant: DetailedScreenViewMetrics.genderTextFieldTopAnchorConstant).isActive = true
+        genderTextField.leadingAnchor.constraint(equalTo: safeAreaLayoutGuide.leadingAnchor,  constant: DetailedScreenViewMetrics.genderTextFieldLeadingAnchor).isActive = true
+        genderTextField.trailingAnchor.constraint(equalTo: safeAreaLayoutGuide.trailingAnchor,  constant: DetailedScreenViewMetrics.genderTextFieldTrailingAnchor).isActive = true
+        genderTextField.heightAnchor.constraint(equalToConstant: DetailedScreenViewMetrics.genderTextFieldHeightAnchor).isActive = true
     }
 }
 
+enum DetailedScreenViewMetrics {
+    static let imageViewCornerRadius = 75.0
+    static let imageViewHeightAnchor = 150.0
+    static let imageViewWidthAnchor = 150.0
+    static let imageViewTopAnchorConstant = 30.0
+                                              
+    static let nameTextFieldTopAnchorConstant = 30.0
+    static let nameTextFieldLeadingAnchorConstant = 10.0
+    static let nameTextFieldTrailingAnchorConstant = -10.0
+    static let nameTextFieldHeightAnchor = 34.0
+    
+    static let birthdayTextFieldTopAnchorConstant = 20.0
+    static let birthdayTextFieldLeadingAnchorConstant = 10.0
+    static let birthdayTextFieldTrailingAnchorConstant = -10.0
+    static let birthdayTextFieldHeightAnchor = 34.0
+    
+    static let genderTextFieldTopAnchorConstant = 20.0
+    static let genderTextFieldLeadingAnchor = 10.0
+    static let genderTextFieldTrailingAnchor = -10.0
+    static let genderTextFieldHeightAnchor = 34.0
+}
