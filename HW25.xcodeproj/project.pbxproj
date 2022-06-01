@@ -20,6 +20,7 @@
 		6DCA7DA128476FA30024C9AE /* MainScreenViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6DCA7DA028476FA30024C9AE /* MainScreenViewModel.swift */; };
 		6DCA7DA328477AD70024C9AE /* MainScreenViewControllerDataSource.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6DCA7DA228477AD70024C9AE /* MainScreenViewControllerDataSource.swift */; };
 		6DCA7DA5284782450024C9AE /* MainScreenViewControllerDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6DCA7DA4284782450024C9AE /* MainScreenViewControllerDelegate.swift */; };
+		6DCA7DA7284785530024C9AE /* DetailedScreenView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6DCA7DA6284785530024C9AE /* DetailedScreenView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -38,6 +39,7 @@
 		6DCA7DA028476FA30024C9AE /* MainScreenViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainScreenViewModel.swift; sourceTree = "<group>"; };
 		6DCA7DA228477AD70024C9AE /* MainScreenViewControllerDataSource.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainScreenViewControllerDataSource.swift; sourceTree = "<group>"; };
 		6DCA7DA4284782450024C9AE /* MainScreenViewControllerDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainScreenViewControllerDelegate.swift; sourceTree = "<group>"; };
+		6DCA7DA6284785530024C9AE /* DetailedScreenView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailedScreenView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -173,6 +175,7 @@
 		6DBE543328476B30002136CC /* Views */ = {
 			isa = PBXGroup;
 			children = (
+				6DCA7DA6284785530024C9AE /* DetailedScreenView.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -265,6 +268,7 @@
 			files = (
 				6DBE5416284761F1002136CC /* MainScreenViewController.swift in Sources */,
 				6DCA7D9C28476E100024C9AE /* MainScreenView.swift in Sources */,
+				6DCA7DA7284785530024C9AE /* DetailedScreenView.swift in Sources */,
 				6DBE5412284761F1002136CC /* AppDelegate.swift in Sources */,
 				6DCA7DA328477AD70024C9AE /* MainScreenViewControllerDataSource.swift in Sources */,
 				6DCA7DA5284782450024C9AE /* MainScreenViewControllerDelegate.swift in Sources */,
