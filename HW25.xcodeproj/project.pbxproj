@@ -72,7 +72,6 @@
 				6DBE541D284761F2002136CC /* Assets.xcassets */,
 				6DBE541F284761F2002136CC /* LaunchScreen.storyboard */,
 				6DBE5422284761F2002136CC /* Info.plist */,
-				6DBE541A284761F1002136CC /* HW25.xcdatamodeld */,
 			);
 			path = Resources;
 			sourceTree = "<group>";
@@ -131,6 +130,7 @@
 		6DBE543028476851002136CC /* CodeData */ = {
 			isa = PBXGroup;
 			children = (
+				6DBE541A284761F1002136CC /* HW25.xcdatamodeld */,
 			);
 			path = CodeData;
 			sourceTree = "<group>";
